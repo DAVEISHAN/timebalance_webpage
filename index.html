@@ -118,7 +118,7 @@
 
 <html>
 <head>
-	<title>This is my paper title</title>
+	<title>Webpage for TimeBalance CVPR-2023</title>
 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 	<meta property="og:title" content="TimeBalance: Temporally-Invariant and Temporally-Distinctive Video Representations for Semi-Supervised Action Recognition" />
 	<meta property="og:description" content="Paper description." />
@@ -194,7 +194,7 @@
 		<table align=center width=850px>
 			<tr>
 				<td>
-					This was a template originally made for <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a>. The code can be found in this <a href="https://github.com/richzhang/webpage-template">repository</a>.
+					<b>Motivation for Temporally-Distinctive and Temporally-Invariant Representations.</b> In order to leverage the unlabeled videos effectively, we consider two kinds of self-supervised video representation learning techniques with complementary goals: (1) <i>Temporally Invariant Representations</i> (<code>Bottom Right</code>) encourage learning the commonalities of the clips, hence it mainly focuses on learning features related to highly frequent repetitions and appearance. (2) <i>Temporally Distinctive Representations</i> (<code>Bottom Left</code>) encourage learning the dissimilarities between clips of the same video, hence it encourages learning features for sub-actions within the video. The plot shows the activity-wise UCF101 performance difference of finetuned models which were self-supervised pretrained with temporally-distinctive and temporally-invariant objectives. The plot shows extreme 25-25 classes after sorting the all classwise differences.
 				</td>
 			</tr>
 		</table>
@@ -253,7 +253,8 @@
 		<center>
 			<tr>
 				<td>
-					Short description if wanted
+					<b>Our Framework</b> We use a teacher-student framework where we use two teachers: f<sub>I</sub> and f<sub>D</sub>. The input clip x<sup>(i)</sup> is given to the teachers and student to get their predictions.
+We utilize a reweighting strategy to combine the predictions of two teachers. Regardless of whether the video v<sup>(i)</sup> is labeled or unlabeled, we distill the combined knowledge of teachers to the student. For the labeled samples, we also apply standard cross-entropy loss.
 				</td>
 			</tr>
 		</center>
