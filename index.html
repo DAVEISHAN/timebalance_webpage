@@ -258,14 +258,1155 @@ We utilize a reweighting strategy to combine the predictions of two teachers. Re
 				</td>
 			</tr>
 		</center>
-	</table>
-	<table align=center width=800px>
-		<br>
-		<tr><center>
-			<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/webpage-template'>[GitHub]</a>
-			</center>
-		</span>
-	</table>
+	<center><h1>Results</h1></center>
+		<table style="border-collapse: collapse; border: none; border-spacing: 0px;">
+	<caption>
+		\textbf{Comparison with state-of-the-art methods}: Methods using pre-trained ImageNet weights are shown in \textcolor[rgb]{0.6,0.6,0.6}{Grey}. V- Video (RGB), F- Optical Flow, G- Temporal Gradients. Best results are shown in \bestresult{Red}, and Second-best in \secondbest{Blue}
+	</caption>
+	<tr>
+		<td rowspan="2" style="border-bottom: 1px solid black; border-top: 1px solid rgb(0, 0, 0); padding-right: 3pt; padding-left: 3pt;">
+			<b>Method</b>
+		</td>
+		<td rowspan="2" style="border-bottom: 1px solid black; border-top: 1px solid rgb(0, 0, 0); padding-right: 3pt; padding-left: 3pt;">
+			<b>Backbone</b>
+		</td>
+		<td rowspan="2" style="border-bottom: 1px solid black; border-top: 1px solid rgb(0, 0, 0); text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>Params</b>
+			<br>
+			<b>(M)</b>
+		</td>
+		<td rowspan="2" style="border-bottom: 1px solid black; border-top: 1px solid rgb(0, 0, 0); text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>Input</b>
+		</td>
+		<td rowspan="2" style="border-right: 1px solid black; border-bottom: 1px solid black; border-top: 1px solid rgb(0, 0, 0); text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>#F</b>
+		</td>
+		<td colspan="5" style="border-right: 1px solid black; border-bottom: 1px solid black; border-top: 1px solid rgb(0, 0, 0); text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>UCF101</b>
+		</td>
+		<td colspan="3" style="border-right: 1px solid black; border-bottom: 1px solid black; border-top: 1px solid rgb(0, 0, 0); text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>HMDB51</b>
+		</td>
+		<td colspan="2" style="border-bottom: 1px solid black; border-top: 1px solid rgb(0, 0, 0); text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>Kinetics400</b>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>1%</b>
+		</td>
+		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>5%</b>
+		</td>
+		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>10%</b>
+		</td>
+		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>20%</b>
+		</td>
+		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>50%</b>
+		</td>
+		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>40%</b>
+		</td>
+		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>50%</b>
+		</td>
+		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>60%</b>
+		</td>
+		<td style="border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>1%</b>
+		</td>
+		<td style="border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<b>10%</b>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			PL&nbsp;ICML'13&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			17.6
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			24.7
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			37.0
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			47.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			27.3
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			32.4
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			33.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			MT&nbsp;NeuRIPS'17&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			17.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			25.6
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			36.3
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			45.8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			27.2
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			30.4
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			32.2
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			S4L&nbsp;ICCV'19&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			22.7
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			29.1
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			37.7
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			47.9
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			29.8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			31.0
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			35.6
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			SD&nbsp;ICCV'19&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			31.2
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			40.7
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			45.4
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			53.9
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			32.6
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			35.1
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			36.3
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			MT+SD &nbsp;WACV'21&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			30.3
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			40.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			45.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			53.0
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			32.3
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			33.6
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			35.7
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3DRotNet&nbsp;Arxiv'19&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			15.0
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			31.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			40.4
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			47.1
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">VideoSemi&nbsp;WACV'21&nbsp;</font>
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">3D-ResNet18</font>
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">13.5</font>
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">V</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">16</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">-</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">32.4</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">42.0</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">48.7</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">54.3</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">32.7</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">36.2</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">37.0</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">-</font>
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">-</font>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			TCL&nbsp;CVPR'21&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			TSM-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			11.6
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			TG-FixMatch&nbsp;CVPR'21&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			44.8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			62.4
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			76.1
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			79.3
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			46.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			48.4
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			49.7
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			9.8
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			43.8
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			MvPL&nbsp;ICCV'21&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			VFG
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			41.2
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			55.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			64.7
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			65.6
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			30.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			33.9
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			35.8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			5.0
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			36.9
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			TCLR&nbsp;CVIU'22&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			26.9
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			66.1
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			73.4
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			76.7
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			CMPL&nbsp;CVPR'22&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			23.8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			67.6
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			53.7
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			TACL&nbsp;TSVT'22&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			35.6
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			50.9
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			56.1
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			65.8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			34.6
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			37.2
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			39.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">TACL&nbsp;TSVT'22&nbsp;</font>
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">3D-ResNet18</font>
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">13.5</font>
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">V</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">16</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">-</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">43.7</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">55.6</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">59.2</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">67.2</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">38.7</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">40.2</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">41.7</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">-</font>
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">-</font>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			MemDPC&nbsp;ECCV'20&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			44.2
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			50.9
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			62.3
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			MotionFit&nbsp;ICCV'21&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			VF
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			57.7
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			59.0
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="background-color: rgb(200, 230, 249); border-bottom: 1px solid black; padding-right: 3pt; padding-left: 3pt;">
+			Ours <i>(TimeBalance)</i>
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-bottom: 1px solid black; padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet18
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			13.5
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			8
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			29.1
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			47.9
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			69.8
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			79.1
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			83.3
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			49.8
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			51.4
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			53.1
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			17.1
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			54.9
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			ActorCM&nbsp;Arxiv'21&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			R(2+1)D-34
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			33.3
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			27.0
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			40.2
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			51.7
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			59.9
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			32.9
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			38.2
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			38.9
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">ActorCM&nbsp;Arxiv'21&nbsp;</font>
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">R(2+1)D-34</font>
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">33.3</font>
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">V</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">8</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">-</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">45.1</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">53.0</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">57.4</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">64.7</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">35.7</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">39.5</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">40.8</font>
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">-</font>
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			<font color="#999999">-</font>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			FixMatch&nbsp;NeuRIPS'20&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			SlowFast-R50
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			60
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			16.1
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			55.1
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			10.1
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			49.4
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			MvPL&nbsp;ICCV'21
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet50
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			31.8
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			VFG
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			22.8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			80.5
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			17.0
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			58.2
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			CMPL&nbsp;CVPR'22&nbsp;
+		</td>
+		<td style="padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet50
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			31.8
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			8
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			25.1
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			79.1
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			-
+		</td>
+		<td style="border-right: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			17.6
+		</td>
+		<td style="text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			58.4
+		</td>
+	</tr>
+	<tr>
+		<td style="background-color: rgb(200, 230, 249); border-bottom: 1px solid black; padding-right: 3pt; padding-left: 3pt;">
+			Ours <i>(TimeBalance)</i>
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-bottom: 1px solid black; padding-right: 3pt; padding-left: 3pt;">
+			3D-ResNet50
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			31.8
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			V
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			8
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			30.1
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			53.5
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			81.1
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			83.3
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			85.0
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			52.6
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			53.9
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			54.5
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-right: 1px solid black; border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			19.6
+		</td>
+		<td style="background-color: rgb(200, 230, 249); border-bottom: 1px solid black; text-align: center; padding-right: 3pt; padding-left: 3pt;">
+			61.2
+		</td>
+	</tr>
+</table>
+		
+		
 	<br>
 	<hr>
 	<table align=center width=450px>
