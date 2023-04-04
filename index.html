@@ -259,6 +259,37 @@ We utilize a reweighting strategy to combine the predictions of two teachers. Re
 			</tr>
 		</center>
 	</table>	
+	
+	<center><h1>Temporal Similarity based Teacher Reweighting </h1></center>
+
+	<table align=center width=420px>
+		<center>
+			<tr>
+				<td>
+				</td>
+			</tr>
+		</center>
+	</table>
+	<table align=center width=400px>
+		<tr>
+			<td align=center width=400px>
+				<center>
+					<td><img class="round" style="width:450px" src="./resources/semi_similarity_try6.drawio.png"/></td>
+				</center>
+			</td>
+		</tr>
+	</table>
+	<table align=center width=850px>
+		<center>
+			<tr>
+				<td>
+					<b>Temporal Similarity based Teacher Reweighting</b> Firstly, a set of clips from video $\mathbf{v}^{(i)}$ are passed through the distinctive and invariant teachers to get representations. Secondly, Temporal Similarity Matrices ($\mathbf{C}^{(i)}{D}$ and $\mathbf{C}^{(i)}{I}$) are constructed from the cosine similarity of one timestamp to another timestamp. Finally, from the average matrix $\mathbf{C}^{(i)}$, a temporal similarity score $s^{(i)}$ is computed. $s^{(i)}$ is utilized to combine predictions of teachers for video $\mathbf{v}^{(i)}$ during semi-supervised training.
+				</td>
+			</tr>
+		</center>
+	</table>
+	
+	
 	<hr>	
 	<center><h1>Results</h1></center>
 		
