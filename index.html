@@ -283,7 +283,8 @@ We utilize a reweighting strategy to combine the predictions of two teachers. Re
 		<center>
 			<tr>
 				<td>
-					<b>Temporal Similarity based Teacher Reweighting</b> Firstly, a set of clips from video $\mathbf{v}^{(i)}$ are passed through the distinctive and invariant teachers to get representations. Secondly, Temporal Similarity Matrices ($\mathbf{C}^{(i)}{D}$ and $\mathbf{C}^{(i)}{I}$) are constructed from the cosine similarity of one timestamp to another timestamp. Finally, from the average matrix $\mathbf{C}^{(i)}$, a temporal similarity score $s^{(i)}$ is computed. $s^{(i)}$ is utilized to combine predictions of teachers for video $\mathbf{v}^{(i)}$ during semi-supervised training.
+					<h1><strong>Temporal Similarity based Teacher Reweighting</strong></h1>
+<p>Firstly, a set of clips from video <span style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">𝐯<i>i</i></span> are passed through the distinctive and invariant teachers to get representations. Secondly, Temporal Similarity Matrices (<span style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">𝐂<i>i</i></span><sub>D</sub> and <span style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">𝐂<i>i</i></span><sub>I</sub>) are constructed from the cosine similarity of one timestamp to another timestamp. Finally, from the average matrix <span style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">𝐂<i>i</i></span>, a temporal similarity score <span style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">s<i>i</i></span> is computed. <span style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">s<i>i</i></span> is utilized to combine predictions of teachers for video <span style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">𝐯<i>i</i></span> during semi-supervised training.</p>
 				</td>
 			</tr>
 		</center>
